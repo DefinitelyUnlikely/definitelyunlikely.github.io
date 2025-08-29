@@ -3,6 +3,7 @@ body {
     height: 100%;
     background-color: #24292e;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
