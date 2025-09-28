@@ -154,8 +154,20 @@ a:hover {
         margin: 0;
     }
 
+    .picture-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .profile-picture {
-        display: none;
+        max-width: 80%;
+    }
+
+    .picture-div hr {
+        margin: 0.5rem;
+        width: 98%;
     }
 
     .cv {
