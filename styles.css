@@ -159,15 +159,17 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 0;
     }
 
     .profile-picture {
-        max-width: 80%;
+        max-height: 200px;
+        margin-top: 0;
     }
 
     .picture-div hr {
         margin: 0.5rem;
-        width: 98%;
+        width: 100%;
     }
 
     .cv {
@@ -181,5 +183,10 @@ a:hover {
     .cv>* {
         margin: 1rem;
     }
+
+    .top-bar {
+        margin: 0 !important;
+    }
+
 
 }
