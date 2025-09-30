@@ -1,0 +1,297 @@
+/* Designing with large screen first in mind as this is a CV */
+/* And the mobile part should primarily be putting the left and right column on 
+on top of each other instead of infront */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+body {
+    background: rgb(36, 36, 36);
+    color: rgb(160, 160, 160);
+    margin: 0;
+    padding: 0;
+}
+
+.lighter-text {
+    color: white;
+}
+
+.main {
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1280px;
+}
+
+/* Large screen specific */
+@media screen and (min-width: 769px) {
+    body {
+        overflow: hidden;
+    }
+
+    .left {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .right {
+        width: 60%;
+        flex: 1;
+        overflow-y: auto;
+        /*  Claude coming in clutch */
+        margin-right: calc(-50vw + 640px);
+        padding-right: calc(50vw - 640px);
+    }
+
+
+
+}
+
+/*  To keep things from reacting and staying stuck after a click on phones etc. */
+@media screen and (hover: hover) {
+    a:hover {
+        color: #ffca66;
+    }
+
+    .contact-icon:hover {
+        width: 40px;
+    }
+
+    #gh-1:hover {
+        width: 35px;
+    }
+
+    .project-link>div:hover {
+        background: rgba(66, 66, 66, 0.5);
+        border-radius: 0.5rem;
+        margin: 1rem;
+    }
+
+    .table-of-content>a:hover {
+        font-size: 1.2rem;
+        transition: ease 0.3s;
+    }
+}
+
+a {
+    color: #ffa500;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+
+/* Left side / Top */
+
+.name-occ {
+    margin: 0.5rem;
+}
+
+.name-occ>h2 {
+    margin-bottom: 0.5rem;
+}
+
+.name-occ>h4 {
+    margin: 0;
+}
+
+.profile-pic {
+    margin: 1rem 0 1rem 0;
+}
+
+#prof-pic {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.table-of-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    width: 30px;
+    margin-right: 0.1rem;
+}
+
+#gh-1 {
+    width: 25px;
+    /* Github logo need size adjustment due to being round */
+}
+
+.links {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links>div {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Right side / Bottom  */
+
+.right-content {
+    margin: auto;
+    width: 70%;
+}
+
+.right-content>div {
+    margin-bottom: 5rem;
+}
+
+.projects>div {
+    margin-bottom: 2rem;
+}
+
+.projects>div>p {
+    margin: 0.25rem 0 0.25rem 0;
+}
+
+.focus {
+    display: flex;
+}
+
+.project-link {
+    color: rgb(160, 160, 160);
+}
+
+.label {
+    margin-right: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #e09a17;
+    border-radius: 2rem;
+    min-width: 4rem;
+}
+
+.label-text {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/*  Small screen design */
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        overflow-x: hidden
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 1%;
+    }
+
+    .right-content>div {
+        margin-bottom: 2rem;
+    }
+
+    .profile-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table-of-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects>a>div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exp>div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .education>div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .project-p {
+        word-wrap: break-word;
+    }
+
+    /* Fix labels for mobile */
+    .focus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
