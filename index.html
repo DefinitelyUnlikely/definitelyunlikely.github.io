@@ -24,7 +24,7 @@
             <!-- Name and occupation div -->
             <div class="name-occ">
                 <h2 class="lighter-text">Martin Kåår Johansson</h2>
-                <h4>Studerande <span class="lighter-text">.NET</span> Utveckling <br> Teknikhögskolan</h4>
+                <h4>Studerande <span class="lighter-text">.NET</span> Utvecklare <br> Teknikhögskolan</h4>
             </div>
             <!-- Div for image of me -->
             <div class="profile-pic">
@@ -32,7 +32,7 @@
             </div>
             <!-- Div for table of contents -->
             <div class="table-of-content">
-                <a href="#about-me">Om Mig</a>
+                <a href="#start">Om Mig</a>
                 <a href="#projects">Projekt</a>
                 <a href="#exp">Erfarenhet</a>
                 <a href="#education">Utbildning</a>
@@ -62,7 +62,7 @@
         <!-- right/bottom column (desktop/mobile) -->
         <div class="right">
             <!-- A div to keep the content more in the middle of the right column -->
-            <div class="right-content">
+            <div class="right-content" id="start">
                 <!-- Text about me -->
                 <div class="about-me" id="about-me">
                     <p>
@@ -90,35 +90,84 @@
                 <!-- Projects from GitHub -->
                 <div class="projects" id="projects">
                     <h2 class="lighter-text">Projekt</h2>
-                    <div class="finance">
-                        <p class="lighter-text"><strong>Finansapplikation</strong></p>
-                        <p>Fokus: C#, OOP, NET MAUI</p>
-                        <p>
-                            Skolprojekt med målet att skapa en app som hanterar transaktioner för olika konton och att
-                            spara detta i en databas. Valde att göra en frontend i NET MAUI för att lära mig om
-                            plattformsoberoende utveckling.
-                        </p>
-                    </div>
-                    <div class="drive">
-                        <p class="lighter-text"><strong>Remote drive (Dropbox klon)</strong></p>
-                        <p>Fokus: ASP.NET, Svelte/SvelteKit, auktorisering/autentisering</p>
-                        <p>
-                            Ett skolprojekt där jag utvecklade ett API för fil- och mapphantering, inklusive
-                            autentisering och auktorisering. Projektet inkluderade en webbaserad frontend i SvelteKit,
-                            och syftade till att efterlikna grundläggande funktionalitet från molnlagringstjänster som
-                            Dropbox.
-                        </p>
-                    </div>
-                    <div class="analysis">
-                        <p class="lighter-text"><strong>Värdeanalys</strong></p>
-                        <p>Fokus: Python, Pandas, NumPy och Microsoft Access DB. </p>
-                        <p>
-                            Mitt första programmeringsprojekt, som jag initierade under min tid på Telenor. Programmet
-                            automatiserade hantering och analys av försäljningsdata för att generera insikter som stöd
-                            för affärsbeslut. Detta projekt väckte mitt intresse för programmering på allvar och lade
-                            grunden för min fortsatta utveckling.
-                        </p>
-                    </div>
+                    <a class="project-link" href="">
+                        <div class="finance">
+                            <p class="lighter-text"><strong>Finansapplikation</strong></p>
+                            <div class="focus">
+                                <div class="label"><span class="label-text">C#</span></div>
+                                <div class="label"><span class="label-text">OOP</span></div>
+                                <div class="label"><span class="label-text">NET MAUI</span></div>
+                                <div class="label"><span class="label-text">SQL</span></div>
+                            </div>
+                            <p>
+                                Skolprojekt med målet att skapa en app som hanterar transaktioner för olika konton och
+                                att
+                                spara detta i en databas. Valde att göra en frontend i NET MAUI för att lära mig om
+                                plattformsoberoende utveckling.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="project-link">
+                        <div class="drive">
+                            <p class="lighter-text"><strong>Remote drive (Dropbox klon)</strong></p>
+                            <div class="focus">
+                                <div class="label"><span class="label-text">ASP.NET</span></div>
+                                <div class="label"><span class="label-text">Svelte/SvelteKit</span></div>
+                                <div class="label"><span class="label-text">Auktorisering/Autentisering</span></div>
+                            </div>
+                            <p>
+                                Ett skolprojekt där jag utvecklade ett API för fil- och mapphantering, inklusive
+                                autentisering och auktorisering. Projektet inkluderade en webbaserad frontend i
+                                SvelteKit,
+                                och syftade till att efterlikna grundläggande funktionalitet från molnlagringstjänster
+                                som
+                                Dropbox.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="" class="project-link">
+                        <div class="booking">
+                            <p class="lighter-text"><strong>Rumsbokning</strong></p>
+                            <div class="focus">
+                                <div class="label"><span class="label-text">Scrum</span></div>
+                                <div class="label"><span class="label-text">Agilt arbete</span></div>
+                                <div class="label"><span class="label-text">Git</span></div>
+                                <div class="label"><span class="label-text">GitHub</span></div>
+                            </div>
+                            <p>
+                                Mitt första programmeringsprojekt, som jag initierade under min tid på Telenor.
+                                Programmet
+                                automatiserade hantering och analys av försäljningsdata för att generera insikter som
+                                stöd
+                                för affärsbeslut. Detta projekt väckte mitt intresse för programmering på allvar och
+                                lade
+                                grunden för min fortsatta utveckling.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="" class="project-link">
+                        <div class="analysis">
+                            <p class="lighter-text"><strong>Värdeanalys</strong></p>
+                            <div class="focus">
+                                <div class="label"><span class="label-text">Python</span></div>
+                                <div class="label"><span class="label-text">Pandas</span></div>
+                                <div class="label"><span class="label-text">NumPy</span></div>
+                                <div class="label"><span class="label-text">Microsoft Access DB</span></div>
+                            </div>
+                            <p>
+                                Mitt första programmeringsprojekt, som jag initierade under min tid på Telenor.
+                                Programmet
+                                automatiserade hantering och analys av försäljningsdata för att generera insikter som
+                                stöd
+                                för affärsbeslut. Detta projekt väckte mitt intresse för programmering på allvar och
+                                lade
+                                grunden för min fortsatta utveckling.
+                            </p>
+                        </div>
+                    </a>
+
                 </div>
                 <!-- Work Experience -->
                 <div class="exp" id="exp">
@@ -126,14 +175,28 @@
                     <div class="account-manager">
                         <p><span class="lighter-text"><strong>Account Manager Telenor Prepaid</strong></span> | 2018 -
                             2024</p>
+                        <p>
+                            Tänka utanför boxen, våga göra det man kunde vara obekväm med och att ha fingret på pulsen
+                            var viktiga egenskaper.
+                        </p>
                     </div>
                     <div class="customer-support">
                         <p><span class="lighter-text"><strong>Kundtjänst Telenor</strong></span> | 2016-2018</p>
+                        <p>
+                            Lösningsorienterat tänkande, ställa rätt frågor och förstå kunden var viktigt för att utföra
+                            ett bra jobb. Egenskaper jag har stor nytta av vid programmering.
+                        </p>
                     </div>
                 </div>
                 <!-- Education -->
                 <div class="education" id="education">
                     <h2 class="lighter-text">Utbildning</h2>
+                    <p style="margin: 0;"><span class="lighter-text"><strong>Chalmers Tekniska högskola</strong></span>
+                        | 2012-2015</p>
+                    <p style="margin-top: 0;">Kemiteknik, ej avslutad</p>
+                    <p style="margin: 0;"><span class="lighter-text"><strong>Teknikhögskolan</strong></span> |
+                        2024-Nuvarande</p>
+                    <p style="margin-top: 0;">.NET Utvecklare</p>
                 </div>
             </div>
         </div>

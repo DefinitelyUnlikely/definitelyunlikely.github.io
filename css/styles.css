@@ -49,6 +49,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .name-occ {
@@ -117,8 +118,9 @@ a:hover {
 /* Right side / Bottom  */
 
 .right {
-    border: 1px solid blue;
     width: 65%;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .right-content {
@@ -136,6 +138,36 @@ a:hover {
 
 .projects>div>p {
     margin: 0.25rem 0 0.25rem 0;
+}
+
+.focus {
+    display: flex;
+}
+
+.project-link {
+    color: rgb(160, 160, 160);
+}
+
+.project-link>div:hover {
+    background: rgb(66, 66, 66);
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.label {
+    margin-right: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #ffa500;
+    border-radius: 2rem;
+    min-width: 4rem;
+}
+
+.label-text {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 /*  Small screen design */
