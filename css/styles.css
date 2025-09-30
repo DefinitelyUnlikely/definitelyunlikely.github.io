@@ -28,8 +28,9 @@ body {
 .main {
     margin: auto;
     display: flex;
-    width: 98%;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1280px;
 }
 
 a {
@@ -45,7 +46,7 @@ a:hover {
 /* Left side / Top */
 
 .left {
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,9 +119,13 @@ a:hover {
 /* Right side / Bottom  */
 
 .right {
-    width: 65%;
+    width: 60%;
     flex: 1;
     overflow-y: auto;
+    margin-right: calc(-50vw + 640px);
+    /* 640px = half of 1280px max-width */
+    padding-right: calc(50vw - 640px);
+    /* compensate to keep content in place */
 }
 
 .right-content {
