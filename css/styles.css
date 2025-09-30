@@ -122,10 +122,9 @@ a:hover {
     width: 60%;
     flex: 1;
     overflow-y: auto;
+    /*  Claude coming in clutch */
     margin-right: calc(-50vw + 640px);
-    /* 640px = half of 1280px max-width */
     padding-right: calc(50vw - 640px);
-    /* compensate to keep content in place */
 }
 
 .right-content {
