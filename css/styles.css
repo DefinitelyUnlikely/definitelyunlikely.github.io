@@ -270,6 +270,22 @@ a {
         align-items: flex-start;
     }
 
+    .exp>div>p {
+        margin: 0 0 0.2rem 0;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills>p {
+        margin: 0 0 0.2rem 0;
+
+    }
+
     .education {
         display: flex;
         flex-direction: column;
