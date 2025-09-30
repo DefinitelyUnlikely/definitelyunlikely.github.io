@@ -40,60 +40,6 @@ a:hover {
     align-items: center;
 }
 
-/* Arrow as seen in https://www.youtube.com/watch?v=0YhcQpbjz2U */
-.up-arrow-area {
-    position: fixed;
-    width: 4rem;
-    height: 4rem;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 2rem;
-}
-
-.up-arrow-area.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.up-arrow {
-    border: solid orange;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 1rem;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%) rotate(-135deg);
-}
-
-.down-arrow-area {
-    position: fixed;
-    width: 4rem;
-    height: 4rem;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 2rem;
-}
-
-.down-arrow-area.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.down-arrow {
-    border: solid orange;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 1rem;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(15%) rotate(45deg);
-}
 
 @media screen and (min-width: 769px) {
     .top-bar {
@@ -243,5 +189,57 @@ a:hover {
         margin: 0 !important;
     }
 
+    .up-arrow-area {
+        position: fixed;
+        width: 4rem;
+        height: 4rem;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 2rem;
+    }
 
+    .up-arrow-area.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .up-arrow {
+        border: solid orange;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%) rotate(-135deg);
+    }
+
+    .down-arrow-area {
+        position: fixed;
+        width: 4rem;
+        height: 4rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 2rem;
+    }
+
+    .down-arrow-area.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .down-arrow {
+        border: solid orange;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(15%) rotate(45deg);
+    }
 }
