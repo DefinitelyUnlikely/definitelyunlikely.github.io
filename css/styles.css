@@ -1,0 +1,115 @@
+/* Designing with large screen first in mind as this is a CV */
+/* And the mobile part should primarily be putting the left and right column on 
+on top of each other instead of infront */
+
+body {
+    overflow: hidden;
+    background: rgb(36, 36, 36);
+    color: white;
+    font-family: 'jetBrains Mono';
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    border: 1px solid white;
+    margin: auto;
+    display: flex;
+    width: 98%;
+    height: 98vh;
+}
+
+a {
+    color: #ffa500;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffca66;
+}
+
+/* Left side / Top */
+
+.left {
+    border: 1px solid red;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-occ {
+    border: 1px solid red;
+    margin: 0.5rem;
+}
+
+.name-occ>h2 {
+    margin-bottom: 0.5rem;
+}
+
+.name-occ>h4 {
+    margin: 0;
+}
+
+.profile-pic {
+    border: 1px solid red;
+    margin: 1rem 0 1rem 0;
+}
+
+#prof-pic {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.table-of-content {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.table-of-content>a {}
+
+.table-of-content>a:hover {
+    font-size: 1.2rem;
+    transition: ease 0.3s;
+}
+
+.contact-icon {
+    width: 30px;
+    margin-right: 0.1rem;
+}
+
+.contact-icon:hover {
+    width: 40px;
+}
+
+
+#gh-1 {
+    width: 25px;
+    /* Github logo need size adjustment due to being round */
+}
+
+#gh-1:hover {
+    width: 35px;
+}
+
+.links {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links>div {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Right side / Bottom  */
+
+.right {
+    border: 1px solid blue;
+    width: 65%;
+}

@@ -6,14 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Kåår Johansson</title>
 
-    <link rel="stylesheet" href="JetBrainsMono.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/JetBrainsMono.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <!-- Wrapper for my two columns -->
+    <!-- The columns should  -->
     <div class="main">
-        <div class="left"></div>
-        <div class="right"></div>
+        <!-- left/top column (desktop/mobile) -->
+        <!-- Should contain:  my name, my occupation,
+         table of contents, contacts/links and picture-->
+        <div class="left">
+            <!-- Name and occupation div -->
+            <div class="name-occ">
+                <h2>Martin Kåår Johansson</h2>
+                <h4>Studerande .NET Utveckling <br> Teknikhögskolan</h4>
+            </div>
+            <!-- Div for image of me -->
+            <div class="profile-pic">
+                <img id="prof-pic" src="static/img/linkedin-profile-pic.jpg" alt="profile picture">
+            </div>
+            <!-- Div for table of contents -->
+            <div class="table-of-content">
+                <a href="">Om Mig</a>
+                <a href="">Projekt</a>
+                <a href="">Erfarenhet</a>
+            </div>
+            <!--links -->
+            <div class="links">
+                <div class="github">
+                    <a href="https://github.com/DefinitelyUnlikely/" target="_blank"><img class="contact-icon" id="gh-1"
+                            src="static/assets/github-mark-white.svg" alt="invertocat logo"></a>
+                </div>
+                <div class="linkedin">
+                    <a href="https://linkedin.com/in/martin-kaar-johansson" target="_blank"><img
+                            src="static/img/InBug-White.png" alt="LinkedIn ln Logo" class="contact-icon"></a>
+                </div>
+                <div class="email">
+                    <a href="mailto:martin@kaarjohansson.se" target="_blank"><img id="mail"
+                            src="static/assets/email-8-svgrepo-com.svg" alt="An icon of an email"
+                            class="contact-icon"></a>
+                </div>
+            </div>
+            <!-- Phone -->
+            <div class="phone">
+                <p>Eller ring mig på: +46 0708 55 07 58</p>
+            </div>
+        </div>
+
+        <!-- right/bottom column (desktop/mobile) -->
+        <div class="right">
+
+        </div>
     </div>
 </body>
 
