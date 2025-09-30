@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Kåår Johansson</title>
 
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     <link rel="stylesheet" href="css/JetBrainsMono.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -20,8 +23,8 @@
         <div class="left">
             <!-- Name and occupation div -->
             <div class="name-occ">
-                <h2>Martin Kåår Johansson</h2>
-                <h4>Studerande .NET Utveckling <br> Teknikhögskolan</h4>
+                <h2 class="lighter-text">Martin Kåår Johansson</h2>
+                <h4>Studerande <span class="lighter-text">.NET</span> Utveckling <br> Teknikhögskolan</h4>
             </div>
             <!-- Div for image of me -->
             <div class="profile-pic">
@@ -29,9 +32,10 @@
             </div>
             <!-- Div for table of contents -->
             <div class="table-of-content">
-                <a href="">Om Mig</a>
-                <a href="">Projekt</a>
-                <a href="">Erfarenhet</a>
+                <a href="#about-me">Om Mig</a>
+                <a href="#projects">Projekt</a>
+                <a href="#exp">Erfarenhet</a>
+                <a href="#education">Utbildning</a>
             </div>
             <!--links -->
             <div class="links">
@@ -51,13 +55,86 @@
             </div>
             <!-- Phone -->
             <div class="phone">
-                <p>Eller ring mig på: +46 0708 55 07 58</p>
+                <p>Eller ring mig på: 0708 55 07 58</p>
             </div>
         </div>
 
         <!-- right/bottom column (desktop/mobile) -->
         <div class="right">
-
+            <!-- A div to keep the content more in the middle of the right column -->
+            <div class="right-content">
+                <!-- Text about me -->
+                <div class="about-me" id="about-me">
+                    <p>
+                        Jag är en nyfiken <span class="lighter-text">.NET-student</span> som har lätt för att ta till
+                        mig ny kunskap och som älskar att
+                        utvecklas. Känslan att lösa problem är oslagbar.
+                        Tidigare studerade jag till kemiingenjör på Chalmers, men det är <span
+                            class="lighter-text">programmering</span> jag brinner för
+                        och vill ägna mig åt i framtiden.
+                    </p>
+                    <p>
+                        Från min tid i <span class="lighter-text">kundtjänst</span> och <span
+                            class="lighter-text">försäljning</span> har jag lärt mig att arbeta <span
+                            class="lighter-text">självständigt</span> med stort
+                        ansvar,
+                        tänka kreativt och lösa problem. Samtidigt är jag inte rädd för att be om hjälp när det behövs.
+                    </p>
+                    <p>
+                        På fritiden tränar jag <span class="lighter-text">karate</span> och säger inte nej till brädspel
+                        en kväll med vänner. Eller en
+                        öl på stan för den delen.
+                    </p>
+                </div>
+                <!-- Projects from GitHub -->
+                <div class="projects" id="projects">
+                    <h2 class="lighter-text">Projekt</h2>
+                    <div class="finance">
+                        <p class="lighter-text"><strong>Finansapplikation</strong></p>
+                        <p>Fokus: C#, OOP, NET MAUI</p>
+                        <p>
+                            Skolprojekt med målet att skapa en app som hanterar transaktioner för olika konton och att
+                            spara detta i en databas. Valde att göra en frontend i NET MAUI för att lära mig om
+                            plattformsoberoende utveckling.
+                        </p>
+                    </div>
+                    <div class="drive">
+                        <p class="lighter-text"><strong>Remote drive (Dropbox klon)</strong></p>
+                        <p>Fokus: ASP.NET, Svelte/SvelteKit, auktorisering/autentisering</p>
+                        <p>
+                            Ett skolprojekt där jag utvecklade ett API för fil- och mapphantering, inklusive
+                            autentisering och auktorisering. Projektet inkluderade en webbaserad frontend i SvelteKit,
+                            och syftade till att efterlikna grundläggande funktionalitet från molnlagringstjänster som
+                            Dropbox.
+                        </p>
+                    </div>
+                    <div class="analysis">
+                        <p class="lighter-text"><strong>Värdeanalys</strong></p>
+                        <p>Fokus: Python, Pandas, NumPy och Microsoft Access DB. </p>
+                        <p>
+                            Mitt första programmeringsprojekt, som jag initierade under min tid på Telenor. Programmet
+                            automatiserade hantering och analys av försäljningsdata för att generera insikter som stöd
+                            för affärsbeslut. Detta projekt väckte mitt intresse för programmering på allvar och lade
+                            grunden för min fortsatta utveckling.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Experience -->
+                <div class="exp" id="exp">
+                    <h2 class="lighter-text">Erfarenhet</h2>
+                    <div class="account-manager">
+                        <p><span class="lighter-text"><strong>Account Manager Telenor Prepaid</strong></span> | 2018 -
+                            2024</p>
+                    </div>
+                    <div class="customer-support">
+                        <p><span class="lighter-text"><strong>Kundtjänst Telenor</strong></span> | 2016-2018</p>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div class="education" id="education">
+                    <h2 class="lighter-text">Utbildning</h2>
+                </div>
+            </div>
         </div>
     </div>
 </body>

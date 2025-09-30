@@ -1,18 +1,31 @@
 /* Designing with large screen first in mind as this is a CV */
 /* And the mobile part should primarily be putting the left and right column on 
 on top of each other instead of infront */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
 
 body {
     overflow: hidden;
     background: rgb(36, 36, 36);
-    color: white;
-    font-family: 'jetBrains Mono';
+    color: rgb(160, 160, 160);
     margin: 0;
     padding: 0;
 }
 
+.lighter-text {
+    color: white;
+}
+
 .main {
-    border: 1px solid white;
     margin: auto;
     display: flex;
     width: 98%;
@@ -32,7 +45,6 @@ a:hover {
 /* Left side / Top */
 
 .left {
-    border: 1px solid red;
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -40,7 +52,6 @@ a:hover {
 }
 
 .name-occ {
-    border: 1px solid red;
     margin: 0.5rem;
 }
 
@@ -53,7 +64,6 @@ a:hover {
 }
 
 .profile-pic {
-    border: 1px solid red;
     margin: 1rem 0 1rem 0;
 }
 
@@ -63,13 +73,10 @@ a:hover {
 }
 
 .table-of-content {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-
-.table-of-content>a {}
 
 .table-of-content>a:hover {
     font-size: 1.2rem;
@@ -112,4 +119,29 @@ a:hover {
 .right {
     border: 1px solid blue;
     width: 65%;
+}
+
+.right-content {
+    margin: auto;
+    width: 70%;
+}
+
+.right-content>div {
+    margin-bottom: 5rem;
+}
+
+.projects>div {
+    margin-bottom: 2rem;
+}
+
+.projects>div>p {
+    margin: 0.25rem 0 0.25rem 0;
+}
+
+/*  Small screen design */
+@media screen and (max-width: 769px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
 }
