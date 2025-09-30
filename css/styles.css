@@ -149,7 +149,7 @@ a:hover {
 }
 
 .project-link>div:hover {
-    background: rgb(66, 66, 66);
+    background: rgba(66, 66, 66, 0.5);
     border-radius: 0.5rem;
     margin: 1rem;
 }
