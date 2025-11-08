@@ -67,6 +67,7 @@ body {
 
     .contact-icon:hover {
         width: 40px;
+        transition: ease 0.2s;
     }
 
     #gh-1:hover {
