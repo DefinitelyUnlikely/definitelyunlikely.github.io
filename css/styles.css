@@ -113,6 +113,7 @@ a {
 #prof-pic {
     width: 200px;
     border-radius: 50%;
+    box-shadow: 0 0 3rem white;
 }
 
 .table-of-content {
