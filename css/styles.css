@@ -32,6 +32,16 @@ body {
     max-width: 1280px;
 }
 
+.cursor-shadow {
+    position: fixed;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 23rem 1rem white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
 /* Large screen specific */
 @media screen and (min-width: 769px) {
     body {
