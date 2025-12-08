@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/favicon/site.webmanifest">
+
+    <script src="script/index.js" defer></script>
 </head>
 
 <body>
     <!-- Wrapper for my two columns -->
     <!-- The columns should  -->
+    <div class="cursor-shadow" id="cursorShadow"></div>
     <div class="main">
         <!-- left/top column (desktop/mobile) -->
         <!-- Should contain:  my name, my occupation,
@@ -22,16 +30,19 @@
         <div class="left">
             <!-- Name and occupation div -->
             <div class="name-occ">
-                <h2 class="lighter-text">Martin Kåår Johansson</h2>
-                <h4><span class="lighter-text">.NET</span> Developer Student<br>Teknikhögskolan</h4>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h2 class="lighter-text">Martin Kåår Johansson</h2>
+                    <button id="language-toggle" class="lang-btn" aria-label="Byt till Svenska">SV</button>
+                </div>
+                <h4>Student <span class="lighter-text">.NET</span> Developer <br> Teknikhögskolan</h4>
             </div>
             <!-- Div for image of me -->
             <div class="profile-pic">
-                <img id="prof-pic" src="static/img/linkedin-profile-pic.jpg" alt="profile picture">
+                <img id="prof-pic" src="static/img/linkedin-profile-pic2.jpg" alt="profile picture">
             </div>
             <!-- Div for table of contents -->
             <div class="table-of-content">
-                <a href="#start">About me</a>
+                <a href="#start">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#exp">Experience</a>
             </div>
@@ -53,7 +64,7 @@
             </div>
             <!-- Phone -->
             <div class="phone">
-                <p>Call me, maybe: 0708 55 07 58</p>
+                <p>Or call me at: 0708 55 07 58</p>
             </div>
         </div>
 
@@ -65,24 +76,26 @@
                 <div class="about-me" id="about-me">
                     <h2 class="lighter-text">About me</h2>
                     <p>
-                        Jag är en nyfiken <span class="lighter-text">.NET-student</span> som har lätt för att ta till
-                        mig ny kunskap och som <span class="lighter-text">älskar att
-                            utvecklas.</span> Känslan att lösa problem är oslagbar.
-                        Tidigare studerade jag kemiteknik på Chalmers, men det är programmering jag brinner för
-                        och vill ägna mig åt i framtiden.
+                        I am a curious <span class="lighter-text">.NET student</span> who finds it easy to acquire
+                        new knowledge and who loves<span class="lighter-text">to grow and improve.</span> The feeling of
+                        solving problems is unbeatable.
+                        Previously I studied chemical engineering at Chalmers, but it is programming that I am
+                        passionate about
+                        and want to devote myself to in the future.
                     </p>
                     <p>
-                        Från min tid i <span class="lighter-text">kundtjänst</span> och <span
-                            class="lighter-text">försäljning</span> har jag lärt mig att <span
-                            class="lighter-text">arbeta självständigt</span> med stort
-                        ansvar,
-                        <span class="lighter-text">tänka kreativt</span> och <span class="lighter-text">lösa
-                            problem.</span> Samtidigt är jag inte rädd för att be om hjälp när det behövs.
+                        From my time in <span class="lighter-text">customer service</span> and <span
+                            class="lighter-text">sales</span> I have learned to <span class="lighter-text">work
+                            independently</span> with great
+                        responsibility,
+                        <span class="lighter-text">think creatively</span> and <span class="lighter-text">solve
+                            problems.</span> At the same time, I am not afraid to ask for help when needed.
                     </p>
                     <p>
-                        På fritiden tränar jag <span class="lighter-text">karate</span> och säger inte nej till brädspel
-                        en kväll med vänner. Eller en
-                        öl på stan för den delen.
+                        In my spare time I practice <span class="lighter-text">karate</span> and wouldn't say no to a
+                        board game
+                        evening with friends. Or a
+                        beer down at the local.
                     </p>
                 </div>
                 <!-- Projects from GitHub -->
@@ -91,7 +104,7 @@
                     <a class="project-link" href="https://github.com/DefinitelyUnlikely/PersonalFinanceApp"
                         target="_blank">
                         <div class="finance">
-                            <p class="lighter-text"><strong>Personal Finance App &#10697;</strong></p>
+                            <p class="lighter-text"><strong>Finance Application &#10697;</strong></p>
                             <div class="focus">
                                 <div class="label"><span class="label-text">C#</span></div>
                                 <div class="label"><span class="label-text">OOP</span></div>
@@ -99,16 +112,16 @@
                                 <div class="label"><span class="label-text">SQL</span></div>
                             </div>
                             <p class="project-p">
-                                Skolprojekt med målet att skapa en app som hanterar transaktioner för olika konton och
-                                att
-                                spara detta i en databas. Valde att göra en frontend i NET MAUI för att lära mig om
-                                plattformsoberoende utveckling.
+                                School project with the goal of creating an app that handles transactions for different
+                                accounts and
+                                to save this in a database. Chose to make a frontend in NET MAUI to learn about
+                                cross-platform development.
                             </p>
                         </div>
                     </a>
                     <a href="https://github.com/DefinitelyUnlikely/FileHostingApp" class="project-link" target="_blank">
                         <div class="drive">
-                            <p class="lighter-text"><strong>Remote drive &#10697;</strong></p>
+                            <p class="lighter-text"><strong>Remote drive (Dropbox clone) &#10697;</strong></p>
                             <div class="focus">
                                 <div class="label"><span class="label-text">ASP.NET</span></div>
                                 <div class="label"><span class="label-text">Entity Framework</span></div>
@@ -116,11 +129,10 @@
                                 <div class="label"><span class="label-text">Auth</span></div>
                             </div>
                             <p class="project-p">
-                                Ett skolprojekt där jag utvecklade ett API för fil- och mapphantering, inklusive
-                                autentisering och auktorisering. Projektet inkluderade en webbaserad frontend i
+                                A school project where I developed an API for file and folder management, including
+                                authentication and authorization. The project included a web-based frontend in
                                 SvelteKit,
-                                och syftade till att efterlikna grundläggande funktionalitet från molnlagringstjänster
-                                som
+                                and aimed to mimic basic functionality from cloud storage services like
                                 Dropbox.
                             </p>
                         </div>
@@ -129,17 +141,18 @@
                     <a href="https://github.com/DefinitelyUnlikely/BookingApplication" class="project-link"
                         target="_blank">
                         <div class="booking">
-                            <p class="lighter-text"><strong>Room Booking App &#10697;</strong></p>
+                            <p class="lighter-text"><strong>Room Booking &#10697;</strong></p>
                             <div class="focus">
                                 <div class="label"><span class="label-text">Scrum</span></div>
-                                <div class="label"><span class="label-text">Agile</span></div>
+                                <div class="label"><span class="label-text">Agile work</span></div>
                                 <div class="label"><span class="label-text">Git</span></div>
                                 <div class="label"><span class="label-text">GitHub</span></div>
                             </div>
                             <p class="project-p">
-                                Group project with a focus on working according to scrum and agile principles as well as
-                                learning more about Git and version control, using ASP.NET and implementing
-                                authorization and authentication.
+                                Group project focusing on working according to scrum, developing our Git methodology and
+                                learning
+                                more about
+                                ASP.NET and authentication/authorization.
                             </p>
                         </div>
                     </a>
@@ -155,37 +168,39 @@
                             2024
                         </p>
                         <p>
-                            Tänka utanför boxen, våga göra det man kunde vara obekväm med och att ha fingret på pulsen
-                            var viktiga egenskaper.
+                            Thinking outside the box, daring to do what might be uncomfortable and having a finger on
+                            the pulse
+                            were important qualities.
                         </p>
                     </div>
                     <div class="customer-support">
-                        <p><span class="lighter-text"><strong>Customer Service Telenor</strong></span>
+                        <p><span class="lighter-text"><strong>Customer Support Telenor</strong></span>
                             <br>
                             2016-2018
                         </p>
                         <p>
-                            Lösningsorienterat tänkande, ställa rätt frågor och förstå kunden var viktigt för att utföra
-                            ett bra jobb. Egenskaper jag har stor nytta av vid programmering.
+                            Solution-oriented thinking, asking the right questions and understanding the customer were
+                            important to perform
+                            a good job. Qualities I have great use of in programming.
                         </p>
                     </div>
                 </div>
                 <!-- Skills -->
-                <div class="skills">
-                    <h2 class="lighter-text">Skills</h2>
+                <div class="skills" id="skills">
+                    <h2 class="lighter-text">Technical Skills</h2>
                     <p>
-                        <span class="lighter-text"><strong>Språk:</strong></span> C#, Python, JavaScript/TypeScript,
+                        <span class="lighter-text"><strong>Languages:</strong></span> C#, Python, JavaScript/TypeScript,
                         HTML/CSS
                     </p>
                     <p>
-                        <span class="lighter-text"><strong>Ramverk:</strong></span> .NET, .NET MAUI, ASP.NET, Entity
+                        <span class="lighter-text"><strong>Frameworks:</strong></span> .NET, .NET MAUI, ASP.NET, Entity
                         Framework, Django, React, Svelte
                     </p>
                     <p>
-                        <span class="lighter-text"><strong>Databaser:</strong></span> PostgreSQL, Azure SQL, MaDB
+                        <span class="lighter-text"><strong>Databases:</strong></span> PostgreSQL, Azure SQL, MaDB
                     </p>
                     <p>
-                        <span class="lighter-text"><strong>Verktyg:</strong></span> Git, GitHub, Visual Studio, VSCode,
+                        <span class="lighter-text"><strong>Tools:</strong></span> Git, GitHub, Visual Studio, VSCode,
                         SCRUM, Azure
                     </p>
                 </div>
@@ -193,16 +208,17 @@
                 <div class="education" id="education">
                     <h2 class="lighter-text">Education</h2>
                     <div>
-                        <p style="margin: 0;"><span class="lighter-text"><strong>Chalmers University</strong></span>
+                        <p style="margin: 0;"><span class="lighter-text"><strong>Chalmers University of
+                                    Technology</strong></span>
                             <br>
                             2012-2015
                         </p>
-                        <p style="margin-top: 0;">Chemical Engineering, did not finish</p>
+                        <p style="margin-top: 0;">Chemical Engineering, not completed</p>
                     </div>
                     <div>
                         <p style="margin: 0;"><span class="lighter-text"><strong>Teknikhögskolan</strong></span>
                             <br>
-                            2024-Current
+                            2024-Present
                         </p>
                         <p style="margin-top: 0;">.NET Developer</p>
                     </div>
