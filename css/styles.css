@@ -244,6 +244,16 @@ a {
         padding: 0 1%;
     }
 
+    .right-content {
+        width: 100%;
+        padding: 0 10%;
+        box-sizing: border-box;
+    }
+
+    .right-content>div>h2 {
+        align-self: center;
+    }
+
     .right-content>div {
         margin-bottom: 2rem;
     }
@@ -270,15 +280,15 @@ a {
     .about-me {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .projects {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .projects>a>div {
@@ -290,8 +300,8 @@ a {
     .exp {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .exp>div {
@@ -307,8 +317,8 @@ a {
     .skills {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .skills>p {
@@ -319,15 +329,14 @@ a {
     .education {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .education>div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
     }
 
     .project-p {
