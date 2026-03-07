@@ -1,6 +1,15 @@
 /* Designing with large screen first in mind as this is a CV */
 /* And the mobile part should primarily be putting the left and right column on 
 on top of each other instead of infront */
+
+/* Darker background and a more reddish orange */
+/* --primary-bg-color: #18181b;
+--primary-text-color: #a1a1aa;
+--secondary-text-color: #fafafa;
+--accent-color: #f97316;
+--label-color: #c2410c; */
+
+
 :root {
     --primary-bg-color: #171124;
     /* Deep dark violet-grey */
