@@ -2,14 +2,20 @@
 /* And the mobile part should primarily be putting the left and right column on 
 on top of each other instead of infront */
 :root {
-    font-family: Inter, sans-serif;
+    --primary-bg-color: #171124;
+    /* Deep dark violet-grey */
+    --primary-text-color: #a39dab;
+    /* Soft grey for body text */
+    --secondary-text-color: #f1f0f5;
+    /* Crisp off-white for headers */
+    --accent-color: #9c7dfa;
+    /* Lighter purple for accents/links */
+    --label-color: #512bd4;
+    /* Classic .NET purple for badges */
+    --project-link-color: #a39dab;
+
+    font-family: 'Inter', sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1;
-    --primary-bg-color: rgb(36, 36, 36);
-    --primary-text-color: rgb(160, 160, 160);
-    --secondary-text-color: white;
-    --accent-color: #ffa500;
-    --label-color: #e09a17;
-    /* fix for Chrome */
 }
 
 @supports (font-variation-settings: normal) {
@@ -202,7 +208,7 @@ a {
 }
 
 .project-link {
-    color: rgb(160, 160, 160);
+    color: var(--project-link-color);
 }
 
 .label {
