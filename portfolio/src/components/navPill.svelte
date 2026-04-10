@@ -45,8 +45,8 @@
 
 <div class="nav-pill" class:hidden={!visible}>
     <button
-        class:active={activeSection.current === "about"}
-        onclick={() => setActiveSection("about")}>About Me</button
+        class:active={activeSection.current === "skills"}
+        onclick={() => setActiveSection("skills")}>Skills</button
     >
     <button
         class:active={activeSection.current === "experience"}

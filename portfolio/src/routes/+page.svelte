@@ -2,6 +2,7 @@
     import About from "../components/sections/about.svelte";
     import Experience from "../components/sections/experience.svelte";
     import Projects from "../components/sections/projects.svelte";
+    import Skills from "../components/sections/skills.svelte";
     import { activeSection } from "$lib/sectionState.svelte";
     import { slide } from "svelte/transition";
 
@@ -15,14 +16,18 @@
 
 <main>
     {#if activeSection.current !== ""}
-        <button class="mobile-toggle" onclick={() => hideFixedPanelMobile = !hideFixedPanelMobile}>
+        <button
+            class="mobile-toggle"
+            onclick={() => (hideFixedPanelMobile = !hideFixedPanelMobile)}
+        >
             {hideFixedPanelMobile ? "Show Profile Info" : "Hide Profile Info"}
         </button>
     {/if}
     <div
         class="fixed-panel"
         class:hidden={activeSection.current === ""}
-        class:mobile-hidden={hideFixedPanelMobile && activeSection.current !== ""}
+        class:mobile-hidden={hideFixedPanelMobile &&
+            activeSection.current !== ""}
     >
         <div class="fixed-panel-content-wrapper">
             <h1 class="name">Martin Kåår Johansson</h1>
@@ -36,12 +41,36 @@
                 />
             </div>
 
-            <div class="skills">
-                <h3>Skills</h3>
-            </div>
-
-            <div class="education">
-                <h3>Education</h3>
+            <div class="about">
+                <h2 class="lighter-text">About me</h2>
+                <p>
+                    I am a curious <span class="lighter-text">.NET student</span
+                    >
+                    who finds it easy to acquire new knowledge and who loves to
+                    <span class="lighter-text">grow and improve.</span> The feeling
+                    of solving problems is unbeatable. Previously I studied chemical
+                    engineering at Chalmers, but it is programming that I am passionate
+                    about and want to devote myself to in the future.
+                </p>
+                <p>
+                    From my time in <span class="lighter-text"
+                        >customer service</span
+                    >
+                    and
+                    <span class="lighter-text">sales</span>
+                    I have learned to
+                    <span class="lighter-text">work independently</span>
+                    with great responsibility,
+                    <span class="lighter-text">think creatively</span> and
+                    <span class="lighter-text">solve problems.</span> Most of the
+                    time, it is simply a matter of asking the right questions!
+                </p>
+                <p>
+                    In my spare time I practice <span class="lighter-text"
+                        >karate</span
+                    > and wouldn't say no to a board game evening with friends. Or
+                    a beer down at the local.
+                </p>
             </div>
 
             <div class="links">
@@ -86,8 +115,8 @@
             <div class="section-panel-content-wrapper">
                 {#key activeSection.current}
                     <div in:slide={{ duration: 400, delay: 100 }}>
-                        {#if activeSection.current === "about"}
-                            <About />
+                        {#if activeSection.current === "skills"}
+                            <Skills />
                         {:else if activeSection.current === "experience"}
                             <Experience />
                         {:else if activeSection.current === "projects"}
@@ -145,6 +174,18 @@
 
     .title {
         margin: 0.1rem;
+    }
+
+    .about {
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .lighter-text {
+        color: var(--secondary-text-color);
     }
 
     .profile-pic {
