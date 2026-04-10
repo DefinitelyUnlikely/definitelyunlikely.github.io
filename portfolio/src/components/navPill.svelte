@@ -96,11 +96,13 @@
 
     @media (max-width: 768px) {
         .nav-pill {
+            width: 80%;
+            height: 3rem;
             position: fixed;
             bottom: 1.5rem;
             left: 50%;
             transform: translateX(-50%);
-            padding: 0.5rem 0.75rem;
+            padding: 0.5rem 0.5rem;
             gap: 0.25rem;
             z-index: 100;
         }
