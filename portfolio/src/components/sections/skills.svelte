@@ -1,19 +1,63 @@
 <script lang="ts">
-    let languages: string[] = [];
-    let frameworks: string[] = [];
-    let databases: string[] = [];
-    let tools: string[] = [];
+    let languages: string[] = [
+        "C#",
+        "Python",
+        "JavaScript/TypeScript",
+        "HTML/CSS",
+    ];
+    let frameworks: string[] = [
+        ".NET",
+        ".NET MAUI",
+        "ASP.NET",
+        "Entity Framework",
+        "Django",
+        "React",
+        "Svelte",
+    ];
+    let databases: string[] = [
+        "PostgreSQL",
+        "Azure SQL",
+        "MS Access",
+        "CosmosDb",
+        "MongoDB",
+    ];
+    let tools: string[] = [
+        "Git",
+        "GitHub",
+        "Visual Studio",
+        "VSCode",
+        "SCRUM",
+        "Azure",
+        "Docker",
+        "xUnit",
+    ];
 </script>
 
 <h2 class="lighter-text">Skills</h2>
 
-<div class="languages-section"></div>
+<div class="languages-section">
+    {#each languages as language}
+        <p>{language}</p>
+    {/each}
+</div>
 
-<div class="frameworks-section"></div>
+<div class="frameworks-section">
+    {#each frameworks as framework}
+        <p>{framework}</p>
+    {/each}
+</div>
 
-<div class="databases-section"></div>
+<div class="databases-section">
+    {#each databases as database}
+        <p>{database}</p>
+    {/each}
+</div>
 
-<div class="tools-section"></div>
+<div class="tools-section">
+    {#each tools as tool}
+        <p>{tool}</p>
+    {/each}
+</div>
 
 <!-- Languages: C#, Python, JavaScript/TypeScript, HTML/CSS
 
