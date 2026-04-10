@@ -10,7 +10,7 @@
 </svelte:head>
 
 <NavPill />
-
+<div class="cursor-shadow" id="cursorShadow"></div>
 {@render children()}
 
 <style>
