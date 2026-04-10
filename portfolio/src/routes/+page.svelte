@@ -13,10 +13,16 @@
 <main>
     <div class="fixed-panel" class:hidden={activeSection.current === ""}>
         <h2 class="name">Martin Kåår Johansson</h2>
-        <h3 class="title">Software Developer</h3>
+
         <div class="profile-pic">
             <img id="prof-pic" src={profilePic} alt="Martin Kåår Johansson" />
         </div>
+        <h3 class="title">Software Developer</h3>
+
+        <div class="education"></div>
+
+        <div class="skills"></div>
+
         <div class="links">
             <div class="github">
                 <a href="https://github.com/DefinitelyUnlikely/" target="_blank"
