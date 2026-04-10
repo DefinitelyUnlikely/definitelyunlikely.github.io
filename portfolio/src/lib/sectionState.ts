@@ -1,1 +1,1 @@
-export const activeView = $state({ current: "", previous: "" });
+export const activeView = $state("");
