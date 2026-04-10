@@ -12,16 +12,20 @@
 
 <main>
     <div class="fixed-panel" class:hidden={activeSection.current === ""}>
-        <h2 class="name">Martin Kåår Johansson</h2>
+        <h1 class="name">Martin Kåår Johansson</h1>
+        <h2 class="title">Software Developer</h2>
 
         <div class="profile-pic">
             <img id="prof-pic" src={profilePic} alt="Martin Kåår Johansson" />
         </div>
-        <h3 class="title">Software Developer</h3>
 
-        <div class="education"></div>
+        <div class="skills">
+            <h3>Skills</h3>
+        </div>
 
-        <div class="skills"></div>
+        <div class="education">
+            <h3>Education</h3>
+        </div>
 
         <div class="links">
             <div class="github">
@@ -95,6 +99,14 @@
         height: 100%;
     }
 
+    .name {
+        margin: 0.1rem;
+    }
+
+    .title {
+        margin: 0.1rem;
+    }
+
     .profile-pic {
         margin: 1rem 0 1rem 0;
     }
@@ -102,7 +114,7 @@
     #prof-pic {
         width: 200px;
         border-radius: 50%;
-        box-shadow: 0 0 3rem rgba(255, 255, 255, 0.473);
+        box-shadow: 0 4px 5rem rgba(0, 0, 0, 0.8);
     }
 
     .links {
@@ -125,6 +137,15 @@
     .contact-icon {
         width: 30px;
         margin-right: 0.1rem;
+    }
+
+    .contact-icon:hover {
+        width: 40px;
+        transition: ease 0.2s;
+    }
+
+    #gh-1:hover {
+        width: 35px;
     }
 
     .section-panel {
