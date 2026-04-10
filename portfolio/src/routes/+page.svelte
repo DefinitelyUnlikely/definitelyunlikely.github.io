@@ -3,6 +3,7 @@
     import Experience from "../components/sections/experience.svelte";
     import Projects from "../components/sections/projects.svelte";
     import { activeSection } from "$lib/sectionState.svelte";
+    import { slide } from "svelte/transition";
 
     import githubIcon from "$lib/assets/github-mark-white.svg";
     import linkedinIcon from "$lib/images/InBug-White.png";
@@ -61,15 +62,21 @@
             </div>
         </div>
     </div>
-    <div class="section-panel" class:hidden={activeSection.current === ""}>
-        {#if activeSection.current === "about"}
-            <About />
-        {:else if activeSection.current === "experience"}
-            <Experience />
-        {:else if activeSection.current === "projects"}
-            <Projects />
-        {/if}
-    </div>
+    {#if activeSection.current !== ""}
+        <div class="section-panel" in:slide={{ duration: 400, delay: 100 }}>
+            {#key activeSection.current}
+                <div in:slide={{ duration: 400, delay: 100 }}>
+                    {#if activeSection.current === "about"}
+                        <About />
+                    {:else if activeSection.current === "experience"}
+                        <Experience />
+                    {:else if activeSection.current === "projects"}
+                        <Projects />
+                    {/if}
+                </div>
+            {/key}
+        </div>
+    {/if}
 </main>
 
 <style>
@@ -92,6 +99,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
     .fixed-panel.hidden {
@@ -152,9 +160,5 @@
         width: 50%;
         height: 100%;
         overflow-y: auto;
-    }
-
-    .section-panel.hidden {
-        display: none;
     }
 </style>
