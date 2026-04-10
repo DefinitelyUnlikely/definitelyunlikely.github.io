@@ -10,7 +10,6 @@
 </svelte:head>
 
 <NavPill />
-<div class="cursor-shadow" id="cursorShadow"></div>
 {@render children()}
 
 <style>
@@ -22,7 +21,13 @@
 		--label-color: #c2410c;
 	}
 
+	:global(html) {
+		height: 100%;
+	}
+
 	:global(body) {
 		background-color: var(--primary-bg-color);
+		height: 100%;
+		overflow: hidden;
 	}
 </style>
