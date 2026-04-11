@@ -41,7 +41,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0.2rem;
+        margin: 1rem;
     }
 
     .links > div {

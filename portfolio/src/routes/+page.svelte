@@ -30,9 +30,6 @@
             {/if}
         </div>
     {/key}
-    <div class="bottom">
-        <Links />
-    </div>
 </main>
 
 <style>
@@ -47,8 +44,8 @@
         align-items: center;
         width: 100%;
         color: var(--primary-text-color);
-        overflow: hidden;
         box-sizing: border-box;
+        overflow-y: auto;
     }
 
     .content {
@@ -57,15 +54,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-    }
-
-    .bottom {
-        position: fixed;
-        bottom: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 </style>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import favicon from "$lib/assets/favicon.svg";
 	import Navigation from "../components/shared/navigation.svelte";
+	import Links from "../components/shared/links.svelte";
 
 	let { children } = $props();
 </script>
@@ -11,6 +12,7 @@
 
 <Navigation navPillHeight={2} />
 {@render children()}
+<Links />
 
 <style>
 	:global(:root) {
@@ -31,7 +33,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		height: 100vh;
 		width: 100vw;
 		overflow: hidden;
