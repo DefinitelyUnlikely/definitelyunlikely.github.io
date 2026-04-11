@@ -4,8 +4,9 @@
             About me
         </h2>
         <p>
-            I am a curious <span class="lighter-text">.NET student</span> who
-            finds it easy to acquire new knowledge and who loves to
+            I am a curious <span class="lighter-text">full stack developer</span
+            >
+            who finds it easy to acquire new knowledge and who loves to
             <span class="lighter-text">grow and improve.</span> The feeling of solving
             problems is unbeatable. Previously I studied chemical engineering at
             Chalmers, but it is programming that I am passionate about and want to

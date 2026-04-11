@@ -7,6 +7,7 @@
         <h1 class="name">Martin Kåår Johansson</h1>
         <ProfilePicture />
         <p class="title">Full stack Developer</p>
+        <p class="location">Gothenburg, Sweden</p>
         <p class="subtitle">
             With a passion to create software that solves real problems for real
             people. <br /> Function over form, but with a flair for the
@@ -52,6 +53,10 @@
         margin-top: 0.5rem;
         text-align: center;
         line-height: 1.25;
+    }
+
+    .hero-text p {
+        margin: 0.25rem 0;
     }
 
     .dramatic {
