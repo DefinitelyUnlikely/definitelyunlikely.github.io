@@ -41,7 +41,7 @@
     }
 
     .easter-egg-active #prof-pic {
-        box-shadow: 0 0 3rem rgba(255, 0, 0, 0.473);
+        box-shadow: 0 0 3rem rgb(255, 115, 0);
         transition: box-shadow 0.5s ease-in-out;
     }
 
