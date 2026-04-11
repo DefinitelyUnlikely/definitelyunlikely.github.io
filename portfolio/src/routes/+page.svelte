@@ -1,11 +1,9 @@
 <script lang="ts">
     import About from "../components/sections/about/about.svelte";
-    import Contact from "../components/sections/contact/contact.svelte";
     import Experience from "../components/sections/experience/experience.svelte";
     import Hero from "../components/sections/hero/hero.svelte";
     import Projects from "../components/sections/projects/projects.svelte";
     import Skills from "../components/sections/skills/skills.svelte";
-    import Links from "../components/shared/links.svelte";
 
     import { slide } from "svelte/transition";
 
@@ -19,8 +17,6 @@
                 <Hero />
             {:else if activeSection.current === "about"}
                 <About />
-            {:else if activeSection.current === "contact"}
-                <Contact />
             {:else if activeSection.current === "experience"}
                 <Experience />
             {:else if activeSection.current === "projects"}
