@@ -27,40 +27,42 @@
     import dotnetIcon from "$lib/assets/icons/dotnet-svgrepo-com.svg";
     import xunitIcon from "$lib/assets/icons/xunit.svg";
     import html5Icon from "$lib/assets/icons/HTML5.svg";
+    import cosmosDbIcon from "$lib/assets/icons/Cosmos.svg";
 
     const languages = [
         { name: "C#", icon: csharpIcon },
         { name: "Python", icon: pythonIcon },
+        { name: "Kotlin", icon: kotlinIcon },
         { name: "JavaScript", icon: javascriptIcon },
         { name: "TypeScript", icon: typescriptIcon },
         { name: "HTML5", icon: html5Icon },
         { name: "CSS3", icon: css3Icon },
-        { name: "Kotlin", icon: kotlinIcon },
         { name: "MATLAB", icon: matlabIcon },
         { name: "XML", icon: xmlIcon },
     ];
 
     const frameworks = [
         { name: ".NET", icon: dotnetIcon },
-        { name: "xUnit", icon: xunitIcon },
         { name: "Django", icon: djangoIcon },
         { name: "React", icon: reactIcon },
         { name: "Svelte", icon: svelteIcon },
+        { name: "xUnit", icon: xunitIcon },
     ];
 
     const databases = [
         { name: "Azure SQL", icon: azureSqlIcon },
-        { name: "PostgreSQL", icon: postgresIcon },
+        { name: "Cosmos DB", icon: cosmosDbIcon },
         { name: "MongoDB", icon: mongodbIcon },
+        { name: "PostgreSQL", icon: postgresIcon },
     ];
 
     const tools = [
+        { name: "Azure", icon: azureIcon },
+        { name: "Azure DevOps", icon: azureDevopsIcon },
+        { name: "Docker", icon: dockerIcon },
         { name: "Git", icon: gitIcon },
         { name: "GitHub", icon: githubIcon },
         { name: "GitHub Actions", icon: githubActionsIcon },
-        { name: "Azure DevOps", icon: azureDevopsIcon },
-        { name: "Azure", icon: azureIcon },
-        { name: "Docker", icon: dockerIcon },
         { name: "Linux", icon: linuxIcon },
         { name: "VS Code", icon: vscodeIcon },
         { name: "Windows 11", icon: windows11Icon },
