@@ -1,6 +1,6 @@
 <div class="about-me" id="about-me">
     <div class="about-text">
-        <h2 class="lighter-text">About me</h2>
+        <h2 class="lighter-text" style="margin: 2rem 0;">About me</h2>
         <p>
             I am a curious <span class="lighter-text">.NET student</span> who
             finds it easy to acquire new knowledge and who loves to
@@ -46,5 +46,9 @@
         align-items: center;
         height: 100%;
         width: 100%;
+    }
+
+    .about-text p {
+        margin: 0.5rem 0;
     }
 </style>

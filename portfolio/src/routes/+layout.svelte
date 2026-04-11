@@ -28,7 +28,7 @@
 		--text-color-secondary: #ffffff;
 		--accent-color: #525252b0;
 		--label-color: #52525283;
-		--font-family: "Inter", sans-serif;
+		--font-family: "JetBrains Mono";
 	}
 
 	:global(body) {
