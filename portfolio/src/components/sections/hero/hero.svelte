@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { activeSection } from "$lib/sectionStore.svelte";
     import ProfilePicture from "../../shared/images/profilePicture.svelte";
 </script>
 

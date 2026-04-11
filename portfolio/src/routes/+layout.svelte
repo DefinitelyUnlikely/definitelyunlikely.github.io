@@ -18,8 +18,8 @@
 		--background-color-secondary: #2a2a2a;
 		--text-color: #ffffff;
 		--text-color-secondary: #d8d6dd;
-		--accent-color: #c2400c83;
-		--label-color: #c2410c;
+		--accent-color: #525252b0;
+		--label-color: #52525283;
 		--font-family: "Inter", sans-serif;
 	}
 
