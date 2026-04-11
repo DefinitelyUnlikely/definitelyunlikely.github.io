@@ -37,6 +37,7 @@
         font-size: 3rem;
         font-weight: bold;
         margin-bottom: 0rem;
+        text-align: center;
     }
 
     .hero-text .title {
