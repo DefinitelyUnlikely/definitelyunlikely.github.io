@@ -83,4 +83,8 @@
         height: 100%;
         width: 100%;
     }
+
+    .exp-text > div {
+        margin-bottom: 0.5rem;
+    }
 </style>
