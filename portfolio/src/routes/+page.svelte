@@ -18,9 +18,10 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: calc(100% - 5rem);
         color: var(--primary-text-color);
         overflow: hidden;
+        box-sizing: border-box;
     }
 
     @media (max-width: 768px) {
