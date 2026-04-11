@@ -8,7 +8,8 @@
         <ProfilePicture />
         <p class="title">Full stack Developer</p>
         <p class="subtitle">
-            Passionate about building scalable and maintainable software
+            With a passion to create software that solves real problems for real
+            people. <br /> Function over form, but with a flair for the dramatic.
         </p>
     </div>
 </div>
@@ -38,7 +39,7 @@
 
     .hero-text .title {
         font-size: 1.5rem;
-        background-color: var(--accent-color);
+        background-color: var(--label-color);
         padding: 0.5rem 1rem;
         border-radius: 12px;
         margin-top: 0rem;
@@ -47,5 +48,8 @@
 
     .hero-text .subtitle {
         font-size: 1.2rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        line-height: 1.25;
     }
 </style>
