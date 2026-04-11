@@ -2,6 +2,10 @@
     import profilePicture from "$lib/assets/img/linkedin-profile-pic.jpg";
 
     let clickCount = $state(0);
+
+    let fiveClicks: string = "OUCH! Stop clicking me!";
+    let tenClicks: string = "You're still going? Really?";
+    let fifteenClicks: string = "I'm starting to think you don't like me.";
 </script>
 
 <div class="profile-pic" class:easter-egg-active={clickCount > 5}>
@@ -16,7 +20,15 @@
     />
     {#if clickCount > 5}
         <div class="easter-egg">
-            <p>OUCH! Stop clicking me!</p>
+            <p>
+                {#if clickCount > 15}
+                    {fifteenClicks}
+                {:else if clickCount > 10}
+                    {tenClicks}
+                {:else}
+                    {fiveClicks}
+                {/if}
+            </p>
         </div>
     {/if}
 </div>
