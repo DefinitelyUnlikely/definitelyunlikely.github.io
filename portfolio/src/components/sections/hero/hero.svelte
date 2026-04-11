@@ -9,7 +9,8 @@
         <p class="title">Full stack Developer</p>
         <p class="subtitle">
             With a passion to create software that solves real problems for real
-            people. <br /> Function over form, but with a flair for the dramatic.
+            people. <br /> Function over form, but with a flair for the
+            <span class="dramatic">dramatic</span>.
         </p>
     </div>
 </div>
@@ -51,5 +52,11 @@
         margin-top: 0.5rem;
         text-align: center;
         line-height: 1.25;
+    }
+
+    .dramatic {
+        color: rgb(255, 115, 0);
+        font-weight: bold;
+        font-style: italic;
     }
 </style>
