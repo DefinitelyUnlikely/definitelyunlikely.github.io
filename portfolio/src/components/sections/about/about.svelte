@@ -59,4 +59,22 @@
     .lighter-text {
         color: var(--secondary-text-color);
     }
+
+    button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: 999px;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+        font-weight: 300;
+        cursor: pointer;
+        border: 1px solid var(--primary-color);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.8);
+    }
+
+    button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
 </style>

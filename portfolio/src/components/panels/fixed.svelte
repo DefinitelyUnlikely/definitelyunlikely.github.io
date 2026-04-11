@@ -72,9 +72,9 @@
         }
     }
 
-    @media (max-height: 1200px) {
+    /* @media (max-height: 1200px) {
         .fixed-panel {
             overflow-y: auto;
         }
-    }
+    } */
 </style>
