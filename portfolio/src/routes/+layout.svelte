@@ -10,7 +10,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<Navigation navPillHeight={2} />
+<Navigation navPillHeight={4} />
 {@render children()}
 <Links />
 
