@@ -6,7 +6,7 @@
     <div class="nav-pill">
         <button
             class:active={activeSection.current === ""}
-            onclick={() => (activeSection.current = "")}>Home</button
+            onclick={() => (activeSection.current = "")}>Start</button
         >
         <button
             class:active={activeSection.current === "about"}
