@@ -1,6 +1,7 @@
 <script lang="ts">
     import { activeSection } from "$lib/sectionStore.svelte";
     import { Hamburger } from "svelte-hamburgers";
+    import resume from "$lib/resumes/MartinKaarJohanssonEN.pdf";
 
     let sections = [
         { id: "", name: "Start" },
@@ -31,6 +32,7 @@
                     >{section.name}</button
                 >
             {/each}
+            <a class="resume-link" href={resume} download>Resume</a>
         </div>
 
         <div class="mobile-header">
@@ -57,6 +59,7 @@
                     >{section.name}</button
                 >
             {/each}
+            <a class="resume-link" href={resume} download>Resume</a>
         </div>
     {/if}
 </nav>
@@ -136,6 +139,17 @@
         font-size: 1.1rem;
         padding: 0.75rem 1rem;
         text-align: left;
+    }
+
+    .resume-link {
+        background-color: var(--background-color);
+        color: #ff7300;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-family: "JetBrains Mono";
     }
 
     nav button.active {
