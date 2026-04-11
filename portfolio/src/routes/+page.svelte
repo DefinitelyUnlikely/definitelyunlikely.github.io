@@ -5,7 +5,7 @@
     import Hero from "../components/sections/hero/hero.svelte";
     import Projects from "../components/sections/projects/projects.svelte";
     import Skills from "../components/sections/skills/skills.svelte";
-    import MoveForward from "../components/shared/moveForward.svelte";
+    import Links from "../components/shared/links.svelte";
 
     import { slide } from "svelte/transition";
 
@@ -30,7 +30,9 @@
             {/if}
         </div>
     {/key}
-    <MoveForward />
+    <div class="bottom">
+        <Links />
+    </div>
 </main>
 
 <style>
@@ -54,6 +56,15 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
+    }
+
+    .bottom {
+        position: fixed;
+        bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 </style>
