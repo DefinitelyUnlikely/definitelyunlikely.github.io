@@ -1,6 +1,6 @@
 <script lang="ts">
     import { activeSection } from "$lib/sectionState.svelte";
-    import About from "../sections/about.svelte";
+    import About from "../sections/about/about.svelte";
     import Links from "../links.svelte";
     import ProfilePicture from "../profile-picture.svelte";
 

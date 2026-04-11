@@ -1,9 +1,9 @@
 <script lang="ts">
     import { activeSection } from "$lib/sectionState.svelte";
     import { slide } from "svelte/transition";
-    import Skills from "../sections/skills.svelte";
-    import Experience from "../sections/experience.svelte";
-    import Projects from "../sections/projects.svelte";
+    import Skills from "../sections/skills/skills.svelte";
+    import Experience from "../sections/experience/experience.svelte";
+    import Projects from "../sections/projects/projects.svelte";
 </script>
 
 {#if activeSection.current !== ""}
