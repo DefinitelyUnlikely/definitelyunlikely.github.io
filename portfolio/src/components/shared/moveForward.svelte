@@ -1,8 +1,30 @@
 <script lang="ts">
     import { activeSection } from "$lib/sectionStore.svelte";
+    function moveForward() {
+        switch (activeSection.current) {
+            case "":
+                activeSection.current = "about";
+                break;
+            case "about":
+                activeSection.current = "skills";
+                break;
+            case "skills":
+                activeSection.current = "experience";
+                break;
+            case "experience":
+                activeSection.current = "projects";
+                break;
+            case "projects":
+                activeSection.current = "contact";
+                break;
+            case "contact":
+                activeSection.current = "";
+                break;
+        }
+    }
 </script>
 
-<button onclick={() => (activeSection.current = "")} title="Move Forward">
+<button onclick={() => moveForward()} title="Move Forward">
     <svg
         width="24"
         height="24"
@@ -20,6 +42,8 @@
 
 <style>
     button {
+        position: fixed;
+        bottom: 2rem;
         background-color: var(--accent-color);
         border: 1px solid var(--label-color);
         color: var(--text-color);

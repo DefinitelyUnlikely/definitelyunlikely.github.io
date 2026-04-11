@@ -5,6 +5,7 @@
     import Hero from "../components/sections/hero/hero.svelte";
     import Projects from "../components/sections/projects/projects.svelte";
     import Skills from "../components/sections/skills/skills.svelte";
+    import MoveForward from "../components/shared/moveForward.svelte";
 
     import { slide } from "svelte/transition";
 
@@ -29,6 +30,7 @@
             {/if}
         </div>
     {/key}
+    <MoveForward />
 </main>
 
 <style>
