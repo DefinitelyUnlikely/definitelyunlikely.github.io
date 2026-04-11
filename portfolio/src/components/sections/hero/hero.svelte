@@ -14,7 +14,7 @@
     .hero {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100%;
         width: 100%;

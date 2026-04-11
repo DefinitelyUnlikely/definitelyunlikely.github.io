@@ -6,23 +6,29 @@
     import Projects from "../components/sections/projects/projects.svelte";
     import Skills from "../components/sections/skills/skills.svelte";
 
+    import { slide } from "svelte/transition";
+
     import { activeSection } from "$lib/sectionStore.svelte";
 </script>
 
 <main>
-    {#if activeSection.current === ""}
-        <Hero />
-    {:else if activeSection.current === "about"}
-        <About />
-    {:else if activeSection.current === "contact"}
-        <Contact />
-    {:else if activeSection.current === "experience"}
-        <Experience />
-    {:else if activeSection.current === "projects"}
-        <Projects />
-    {:else if activeSection.current === "skills"}
-        <Skills />
-    {/if}
+    {#key activeSection.current}
+        <div class="content" transition:slide={{ duration: 500 }}>
+            {#if activeSection.current === ""}
+                <Hero />
+            {:else if activeSection.current === "about"}
+                <About />
+            {:else if activeSection.current === "contact"}
+                <Contact />
+            {:else if activeSection.current === "experience"}
+                <Experience />
+            {:else if activeSection.current === "projects"}
+                <Projects />
+            {:else if activeSection.current === "skills"}
+                <Skills />
+            {/if}
+        </div>
+    {/key}
 </main>
 
 <style>
@@ -38,5 +44,14 @@
         color: var(--primary-text-color);
         overflow: hidden;
         box-sizing: border-box;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 </style>
