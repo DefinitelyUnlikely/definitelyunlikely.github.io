@@ -37,14 +37,15 @@
 
 <style>
     main {
-        margin-top: 2rem;
+        padding-top: 5rem;
         margin-bottom: 2rem;
         display: flex;
+        flex-grow: 1;
+        min-height: 0;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: calc(100% - 5rem);
         color: var(--primary-text-color);
         overflow: hidden;
         box-sizing: border-box;

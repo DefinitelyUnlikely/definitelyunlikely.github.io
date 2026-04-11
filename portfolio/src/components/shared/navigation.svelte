@@ -9,10 +9,12 @@
         { id: "projects", name: "Projects" },
         { id: "contact", name: "Contact" },
     ];
+
+    let { navPillHeight } = $props<{ navPillHeight: number }>();
 </script>
 
 <nav>
-    <div class="nav-pill">
+    <div class="nav-pill" style="height: {navPillHeight}rem;">
         {#each sections as section}
             <button
                 class:active={activeSection.current === section.id}
@@ -27,12 +29,19 @@
     .nav-pill {
         background-color: var(--background-color);
         display: flex;
+        flex-shrink: 0;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.5rem;
         padding: 1rem;
         border-radius: 12px;
         box-shadow: 0 0 10px #00000067;
-        height: 2rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .nav-pill button {

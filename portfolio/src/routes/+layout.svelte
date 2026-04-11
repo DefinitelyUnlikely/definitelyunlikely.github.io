@@ -9,15 +9,15 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<Navigation />
+<Navigation navPillHeight={2} />
 {@render children()}
 
 <style>
 	:global(:root) {
 		--background-color: #272727;
 		--background-color-secondary: #2a2a2a;
-		--text-color: #ffffff;
-		--text-color-secondary: #d8d6dd;
+		--text-color: #d8d6dd;
+		--text-color-secondary: #ffffff;
 		--accent-color: #525252b0;
 		--label-color: #52525283;
 		--font-family: "Inter", sans-serif;
@@ -35,5 +35,9 @@
 		height: 100vh;
 		width: 100vw;
 		overflow: hidden;
+	}
+
+	:global(.lighter-text) {
+		color: var(--text-color-secondary);
 	}
 </style>
