@@ -27,32 +27,41 @@
     import dotnetIcon from "$lib/assets/icons/dotnet-svgrepo-com.svg";
     import xunitIcon from "$lib/assets/icons/xunit.svg";
 
-    const skills = [
+    const languages = [
         { name: "C#", icon: csharpIcon },
-        { name: ".NET", icon: dotnetIcon },
-        { name: "xUnit", icon: xunitIcon },
         { name: "Python", icon: pythonIcon },
-        { name: "Django", icon: djangoIcon },
         { name: "JavaScript", icon: javascriptIcon },
         { name: "TypeScript", icon: typescriptIcon },
+        { name: "Kotlin", icon: kotlinIcon },
+        { name: "MATLAB", icon: matlabIcon },
+        { name: "XML", icon: xmlIcon },
+    ];
+
+    const frameworks = [
+        { name: ".NET", icon: dotnetIcon },
+        { name: "xUnit", icon: xunitIcon },
+        { name: "Django", icon: djangoIcon },
         { name: "React", icon: reactIcon },
         { name: "Svelte", icon: svelteIcon },
         { name: "CSS3", icon: css3Icon },
-        { name: "Kotlin", icon: kotlinIcon },
-        { name: "MATLAB", icon: matlabIcon },
+    ];
+
+    const databases = [
+        { name: "Azure SQL", icon: azureSqlIcon },
+        { name: "PostgreSQL", icon: postgresIcon },
+        { name: "MongoDB", icon: mongodbIcon },
+    ];
+
+    const tools = [
         { name: "Git", icon: gitIcon },
         { name: "GitHub", icon: githubIcon },
         { name: "GitHub Actions", icon: githubActionsIcon },
         { name: "Azure DevOps", icon: azureDevopsIcon },
         { name: "Azure", icon: azureIcon },
-        { name: "Azure SQL", icon: azureSqlIcon },
-        { name: "PostgreSQL", icon: postgresIcon },
-        { name: "MongoDB", icon: mongodbIcon },
         { name: "Docker", icon: dockerIcon },
         { name: "Linux", icon: linuxIcon },
         { name: "VS Code", icon: vscodeIcon },
         { name: "Windows 11", icon: windows11Icon },
-        { name: "XML", icon: xmlIcon },
     ];
 </script>
 
@@ -61,10 +70,37 @@
     <div class="skills-text">
         <p>Some of the skills, technologies and tools I have worked with:</p>
     </div>
-    <div class="skills-grid">
-        {#each skills as skill}
-            <SkillBadge {skill} />
-        {/each}
+    <div class="languages">
+        <p>Languages:</p>
+        <div class="skills-grid">
+            {#each languages as language}
+                <SkillBadge skill={language} />
+            {/each}
+        </div>
+    </div>
+    <div class="frameworks">
+        <p>Frameworks:</p>
+        <div class="skills-grid">
+            {#each frameworks as framework}
+                <SkillBadge skill={framework} />
+            {/each}
+        </div>
+    </div>
+    <div class="databases">
+        <p>Databases:</p>
+        <div class="skills-grid">
+            {#each databases as database}
+                <SkillBadge skill={database} />
+            {/each}
+        </div>
+    </div>
+    <div class="tools">
+        <p>Tools:</p>
+        <div class="skills-grid">
+            {#each tools as tool}
+                <SkillBadge skill={tool} />
+            {/each}
+        </div>
     </div>
 </section>
 
@@ -73,18 +109,35 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         height: 100%;
         width: 100%;
         max-width: 600px;
     }
 
     .skills-text {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .languages,
+    .frameworks,
+    .databases,
+    .tools {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        height: 100%;
         width: 100%;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
     }
 </style>
