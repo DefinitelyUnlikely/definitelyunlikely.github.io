@@ -9,7 +9,6 @@
         { id: "skills", name: "Skills" },
         { id: "experience", name: "Experience" },
         { id: "projects", name: "Projects" },
-        { id: "contact", name: "Contact" },
     ];
 
     let { navPillHeight } = $props<{ navPillHeight: number }>();
