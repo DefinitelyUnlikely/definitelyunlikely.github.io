@@ -26,12 +26,15 @@
     import xmlIcon from "$lib/assets/icons/XML.svg";
     import dotnetIcon from "$lib/assets/icons/dotnet-svgrepo-com.svg";
     import xunitIcon from "$lib/assets/icons/xunit.svg";
+    import html5Icon from "$lib/assets/icons/HTML5.svg";
 
     const languages = [
         { name: "C#", icon: csharpIcon },
         { name: "Python", icon: pythonIcon },
         { name: "JavaScript", icon: javascriptIcon },
         { name: "TypeScript", icon: typescriptIcon },
+        { name: "HTML5", icon: html5Icon },
+        { name: "CSS3", icon: css3Icon },
         { name: "Kotlin", icon: kotlinIcon },
         { name: "MATLAB", icon: matlabIcon },
         { name: "XML", icon: xmlIcon },
@@ -43,7 +46,6 @@
         { name: "Django", icon: djangoIcon },
         { name: "React", icon: reactIcon },
         { name: "Svelte", icon: svelteIcon },
-        { name: "CSS3", icon: css3Icon },
     ];
 
     const databases = [
