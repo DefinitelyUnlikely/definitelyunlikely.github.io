@@ -1,11 +1,11 @@
 <script lang="ts">
     import FixedPanel from "../components/panels/fixed.svelte";
     import SectionPanel from "../components/panels/section.svelte";
-    import HideInfo from "../components/hideInfo.svelte";
+    import MobileHideInfo from "../components/mobileHideInfo.svelte";
 </script>
 
 <main>
-    <HideInfo />
+    <MobileHideInfo />
     <FixedPanel />
     <SectionPanel />
 </main>
