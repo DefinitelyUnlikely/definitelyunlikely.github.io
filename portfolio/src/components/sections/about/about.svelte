@@ -1,6 +1,8 @@
 <div class="about-me" id="about-me">
     <div class="about-text">
-        <h2 class="lighter-text" style="margin: 2rem 0;">About me</h2>
+        <h2 class="lighter-text" style="margin: 2rem 0; color: #ffffff">
+            About me
+        </h2>
         <p>
             I am a curious <span class="lighter-text">.NET student</span> who
             finds it easy to acquire new knowledge and who loves to

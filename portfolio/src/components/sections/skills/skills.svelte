@@ -70,9 +70,9 @@
 </script>
 
 <section id="skills" class="skills">
-    <h2>Skills & Technologies</h2>
+    <h2 class="section-title" style="color: #ffffff">Skills & Technologies</h2>
     <div class="skills-text">
-        <p>Some of the skills, technologies and tools I have worked with:</p>
+        <p>Some of the skills, technologies and tools I have worked with!</p>
     </div>
     <div class="languages">
         <p>Languages:</p>
@@ -117,6 +117,10 @@
         height: 100%;
         width: 100%;
         max-width: 600px;
+    }
+
+    .section-title {
+        align-self: center;
     }
 
     .skills > div {

@@ -1,6 +1,6 @@
 <div class="exp" id="exp">
     <div class="exp-text">
-        <h2 class="lighter-text">Experience</h2>
+        <h2 class="lighter-text" style="color: #ffffff">Experience</h2>
         <div class="nexer">
             <p>
                 <span class="lighter-text"
