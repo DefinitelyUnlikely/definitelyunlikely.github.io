@@ -15,6 +15,12 @@
 <Links />
 
 <style>
+	:global(*) {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
 	:global(:root) {
 		--background-color: #272727;
 		--background-color-secondary: #2a2a2a;
@@ -35,7 +41,7 @@
 		align-items: center;
 		justify-content: flex-start;
 		height: 100vh;
-		width: 100vw;
+		width: 100%;
 		overflow: hidden;
 	}
 
