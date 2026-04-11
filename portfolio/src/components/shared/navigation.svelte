@@ -128,6 +128,7 @@
         border-radius: 12px;
         cursor: pointer;
         transition: all 0.2s ease;
+        font-family: "JetBrains Mono";
     }
 
     .mobile-menu button {
