@@ -41,20 +41,22 @@
         gap: 1rem;
         padding: 1rem;
         border-radius: 12px;
-        box-shadow: 0 0 10px var(--accent-color);
+        box-shadow: 0 0 10px #00000067;
+        height: 2rem;
     }
 
     .nav-pill button {
         background-color: var(--background-color);
-        color: var(--text-color);
-        border: 1px solid var(--accent-color);
+        color: var(--text-color-secondary);
+        border: none;
         padding: 0.5rem 1rem;
-        border-radius: 1rem;
+        border-radius: 12px;
         cursor: pointer;
     }
 
     .nav-pill button.active {
         background-color: var(--accent-color);
-        color: var(--background-color);
+        border: 1px solid var(--label-color);
+        color: var(--text-color);
     }
 </style>

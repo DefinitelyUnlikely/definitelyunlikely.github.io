@@ -14,11 +14,12 @@
 
 <style>
 	:global(:root) {
-		--background-color: #000000;
-		--background-color-secondary: #1a1a1a;
+		--background-color: #272727;
+		--background-color-secondary: #2a2a2a;
 		--text-color: #ffffff;
-		--text-color-secondary: #9e9e9e;
-		--accent-color: #ff000033;
+		--text-color-secondary: #d8d6dd;
+		--accent-color: #c2400c83;
+		--label-color: #c2410c;
 		--font-family: "Inter", sans-serif;
 	}
 
@@ -26,5 +27,13 @@
 		background-color: var(--background-color);
 		color: var(--text-color);
 		font-family: var(--font-family);
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
 	}
 </style>
