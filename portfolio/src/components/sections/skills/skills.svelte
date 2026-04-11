@@ -119,6 +119,10 @@
         max-width: 600px;
     }
 
+    .skills > div {
+        margin-top: 0.5rem;
+    }
+
     .skills-text {
         width: 100%;
         margin-bottom: 0;
@@ -132,6 +136,15 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .languages > p,
+    .frameworks > p,
+    .databases > p,
+    .tools > p {
+        margin-bottom: 0.5rem;
     }
 
     .skills-grid {
