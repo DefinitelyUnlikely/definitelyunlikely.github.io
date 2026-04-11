@@ -34,4 +34,27 @@
 </nav>
 
 <style>
+    .nav-pill {
+        background-color: var(--background-color);
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px var(--accent-color);
+    }
+
+    .nav-pill button {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        border: 1px solid var(--accent-color);
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-pill button.active {
+        background-color: var(--accent-color);
+        color: var(--background-color);
+    }
 </style>
