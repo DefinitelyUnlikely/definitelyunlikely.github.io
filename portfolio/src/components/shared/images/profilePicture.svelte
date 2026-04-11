@@ -5,7 +5,7 @@
 
     let fiveClicks: string = "OUCH! Stop clicking me!";
     let tenClicks: string = "You're still going? Really?";
-    let fifteenClicks: string = "I'm starting to think you don't like me.";
+    let fifteenClicks: string = "I'm starting to think you don't like me. :,(";
 </script>
 
 <div class="profile-pic" class:easter-egg-active={clickCount > 5}>
