@@ -48,4 +48,10 @@
 	:global(.lighter-text) {
 		color: var(--text-color-secondary);
 	}
+
+	@media (max-width: 768px) {
+		:global(body) {
+			margin: 0.5rem;
+		}
+	}
 </style>
