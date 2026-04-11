@@ -4,9 +4,12 @@
 
 <div class="hero">
     <div class="hero-text">
-        <h1>Martin Kåår Johansson</h1>
+        <h1 class="name">Martin Kåår Johansson</h1>
         <ProfilePicture />
-        <p>Software Developer</p>
+        <p class="title">Full stack Developer</p>
+        <p class="subtitle">
+            Passionate about building scalable and maintainable software
+        </p>
     </div>
 </div>
 
@@ -28,11 +31,21 @@
     }
 
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
+        margin-bottom: 0rem;
     }
 
-    .hero-text p {
+    .hero-text .title {
         font-size: 1.5rem;
+        background-color: var(--accent-color);
+        padding: 0.5rem 1rem;
+        border-radius: 12px;
+        margin-top: 0rem;
+        box-shadow: 0 0 10px #00000067;
+    }
+
+    .hero-text .subtitle {
+        font-size: 1.2rem;
     }
 </style>
