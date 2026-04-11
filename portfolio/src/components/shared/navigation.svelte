@@ -1,35 +1,25 @@
 <script lang="ts">
     import { activeSection } from "$lib/sectionStore.svelte";
+
+    let sections = [
+        { id: "", name: "Start" },
+        { id: "about", name: "About" },
+        { id: "skills", name: "Skills" },
+        { id: "experience", name: "Experience" },
+        { id: "projects", name: "Projects" },
+        { id: "contact", name: "Contact" },
+    ];
 </script>
 
 <nav>
     <div class="nav-pill">
-        <button
-            class:active={activeSection.current === ""}
-            onclick={() => (activeSection.current = "")}>Start</button
-        >
-        <button
-            class:active={activeSection.current === "about"}
-            onclick={() => (activeSection.current = "about")}>About</button
-        >
-        <button
-            class:active={activeSection.current === "experience"}
-            onclick={() => (activeSection.current = "experience")}
-            >Experience</button
-        >
-        <button
-            class:active={activeSection.current === "projects"}
-            onclick={() => (activeSection.current = "projects")}
-            >Projects</button
-        >
-        <button
-            class:active={activeSection.current === "skills"}
-            onclick={() => (activeSection.current = "skills")}>Skills</button
-        >
-        <button
-            class:active={activeSection.current === "contact"}
-            onclick={() => (activeSection.current = "contact")}>Contact</button
-        >
+        {#each sections as section}
+            <button
+                class:active={activeSection.current === section.id}
+                onclick={() => (activeSection.current = section.id)}
+                >{section.name}</button
+            >
+        {/each}
     </div>
 </nav>
 
