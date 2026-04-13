@@ -9,9 +9,10 @@
         <p class="title">Full stack Developer</p>
         <p class="location">Gothenburg, Sweden</p>
         <p class="subtitle">
-            I'm a fullstack developer that enjoys building software that solves
-            real issues for real people. Always eager to learn new things and
-            improve upon my craft.
+            I'm a fullstack developer that enjoys building <span
+                class="dramatic">software</span
+            > that solves real issues for real people. Always eager to learn new
+            things and improve upon my craft.
         </p>
     </div>
 </div>
@@ -24,6 +25,7 @@
         align-items: center;
         height: 100%;
         width: 100%;
+        max-width: 600px;
     }
 
     .hero-text {
