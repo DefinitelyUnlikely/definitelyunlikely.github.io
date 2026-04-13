@@ -4,6 +4,7 @@
     import Hero from "../components/sections/hero/hero.svelte";
     import Projects from "../components/sections/projects/projects.svelte";
     import Skills from "../components/sections/skills/skills.svelte";
+    import NavigationButton from "../components/shared/navigationButton.svelte";
 
     import { slide } from "svelte/transition";
 

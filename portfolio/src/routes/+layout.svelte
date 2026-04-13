@@ -1,7 +1,7 @@
 <script lang="ts">
 	import favicon from "$lib/assets/favicon.svg";
 	import Navigation from "../components/shared/navigation.svelte";
-	import Links from "../components/shared/links.svelte";
+	import Footer from "../components/shared/footer.svelte";
 
 	let { children } = $props();
 </script>
@@ -12,7 +12,7 @@
 
 <Navigation navPillHeight={4} />
 {@render children()}
-<Links />
+<Footer />
 
 <style>
 	:global(*) {
