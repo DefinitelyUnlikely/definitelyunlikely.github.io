@@ -72,7 +72,6 @@
         align-items: center;
         gap: 0.5rem;
         padding: 0 1rem;
-        border-radius: 12px;
         box-shadow: 0 0 10px #00000067;
         width: 100%;
         position: fixed;
