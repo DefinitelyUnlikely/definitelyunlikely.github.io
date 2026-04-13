@@ -24,5 +24,7 @@
         font-family: "JetBrains Mono";
         opacity: 1;
         transform: translateY(0);
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
     }
 </style>
