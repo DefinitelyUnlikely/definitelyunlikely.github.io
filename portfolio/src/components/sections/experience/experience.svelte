@@ -10,12 +10,14 @@
                 Jan - May 2026
             </p>
             <p>
-                Worked on an internal email sending software, to bring it from
-                development to production. This taught me more about Microsoft
-                Graph, Microsoft Azure, Clean Architecture, as well as working
-                agile within a larger team. Working with Azure Cosmos DB gave me
-                more insight into NoSQL databases. Implementing live
-                collaboration taught me about websockets and OT/CRDTs.
+                Contributed to bringing an internal email-sending platform from
+                development to production within an agile team. Implemented
+                real-time collaborative editing with websockets and CRDT
+                algorithms. Designed and queried a NoSQL data layer with Azure
+                Cosmos DB, and worked with a clean architecture codebase.
+                Integrated with Microsoft Graph and deployed to Microsoft Azure.
+                Load and stress tested with Locust to find bottlenecks and
+                system weak points.
             </p>
         </div>
         <div class="emcap-ab">
@@ -27,10 +29,12 @@
                 Oct - Dec 2025
             </p>
             <p>
-                Worked with RAG integration with EMCAP's chatbot. Also worked on
-                researching options for implementing an identity broker to
-                handle authentication and authorization for different services
-                and identity providers.
+                Developed and integrated a web search RAG (Retrieval-Augmented
+                Generation) pipeline into EMCAP's existing chatbot, improving
+                its ability to handle queries outside of training data.
+                Researched and evaluated identity broker solutions for managing
+                authentication and authorization across multiple services and
+                identity providers.
             </p>
         </div>
         <div class="account-manager">
