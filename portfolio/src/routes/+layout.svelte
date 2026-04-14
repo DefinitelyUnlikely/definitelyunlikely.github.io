@@ -55,4 +55,11 @@
 	:global(.lighter-text) {
 		color: var(--text-color-secondary);
 	}
+
+	@media (max-width: 768px) {
+		:global(html, body) {
+			padding-left: 0.3rem;
+			padding-right: 0.3rem;
+		}
+	}
 </style>
