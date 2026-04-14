@@ -9,10 +9,12 @@
         <p class="title">Full stack Developer</p>
         <p class="location">Gothenburg, Sweden</p>
         <p class="subtitle">
-            I'm a fullstack developer that enjoys building <span
-                class="dramatic">software</span
-            > that solves real issues for real people. Always eager to learn new
-            things and improve upon my craft.
+            Hey! I am a fullstack developer, with years of experience within
+            sales and customer support - which I believe gives me a unique
+            perspective on that writing code and creating <span class="dramatic"
+                >software</span
+            > is about solving real issues for real people. Always eager to learn
+            new things and improve upon my craft.
         </p>
     </div>
 </div>
