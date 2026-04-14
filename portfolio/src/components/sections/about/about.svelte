@@ -7,11 +7,12 @@
             I am a curious <span class="lighter-text">full stack developer</span
             >
             who finds it easy to acquire new knowledge and who loves to
-            <span class="lighter-text">grow and improve.</span> The feeling of solving
-            problems is unbeatable. Previously I studied chemical engineering at
-            Chalmers, but it is programming that I am passionate about and I particularly
-            enjoy integrating different languages and technologies to develop complete
-            solutions.
+            <span class="lighter-text">grow and improve.</span> The feeling of
+            solving problems is unbeatable. Previously I studied chemical
+            engineering at Chalmers, but it is programming that I am passionate
+            about and I particularly enjoy integrating different languages and
+            technologies to develop complete
+            <span class="lighter-text">solutions.</span>
         </p>
         <p>
             From my time in <span class="lighter-text">customer service</span>
@@ -20,9 +21,11 @@
             I have learned to
             <span class="lighter-text">work independently</span>
             with great responsibility,
-            <span class="lighter-text">think creatively</span> and
-            <span class="lighter-text">solve problems.</span> Most of the time, it
-            is simply a matter of asking the right questions!
+            <span class="lighter-text">think creatively</span>,
+            <span class="lighter-text">solve problems</span> and see things from
+            the customer's point of view. Most of the time, it is simply a
+            matter of asking the right
+            <span class="lighter-text">questions!</span>
         </p>
         <p>
             In my spare time I practice <span class="lighter-text">karate</span>
