@@ -9,8 +9,9 @@
             who finds it easy to acquire new knowledge and who loves to
             <span class="lighter-text">grow and improve.</span> The feeling of solving
             problems is unbeatable. Previously I studied chemical engineering at
-            Chalmers, but it is programming that I am passionate about and want to
-            devote myself to in the future.
+            Chalmers, but it is programming that I am passionate about and I particularly
+            enjoy integrating different languages and technologies to develop complete
+            solutions.
         </p>
         <p>
             From my time in <span class="lighter-text">customer service</span>
