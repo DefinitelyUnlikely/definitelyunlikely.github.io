@@ -4,14 +4,12 @@
             About me
         </h2>
         <p>
-            I am a curious <span class="lighter-text">full stack developer</span
+            I am a curious <span class="lighter-text">Full Stack Developer</span
             >
-            who finds it easy to acquire new knowledge and who loves to
-            <span class="lighter-text">grow and improve.</span> The feeling of
-            solving problems is unbeatable. Previously I studied chemical
-            engineering at Chalmers, but it is programming that I am passionate
-            about and I particularly enjoy integrating different languages and
-            technologies to develop complete
+            driven by the "unbeatable" feeling of cracking a complex problem.
+            Previously I studied chemical engineering at Chalmers, but it is
+            programming that I am passionate about and I particularly enjoy
+            integrating different languages and technologies to develop complete
             <span class="lighter-text">solutions.</span>
         </p>
         <p>
@@ -25,7 +23,7 @@
             <span class="lighter-text">solve problems</span> and see things from
             the customer's point of view. Most of the time, it is simply a
             matter of asking the right
-            <span class="lighter-text">questions!</span>
+            <span class="lighter-text">questions.</span>
         </p>
         <p>
             In my spare time I practice <span class="lighter-text">karate</span>
