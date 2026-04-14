@@ -8,6 +8,7 @@
         <ProfilePicture />
         <p class="title">Full stack Developer</p>
         <p class="location">Gothenburg, Sweden</p>
+        <p class="age">Born in '92</p>
         <p class="subtitle">
             Hey! I am a fullstack developer, with years of experience within
             sales and customer support - which I believe gives me a unique
