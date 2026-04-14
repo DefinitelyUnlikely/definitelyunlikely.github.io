@@ -31,7 +31,7 @@
 		--font-family: "JetBrains Mono";
 	}
 
-	:global(body) {
+	:global(html, body) {
 		background-color: var(--background-color);
 		color: var(--text-color);
 		font-family: var(--font-family);
@@ -40,8 +40,15 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		height: 100vh;
+		height: 100%;
+		min-height: 100vh;
 		width: 100%;
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	:global(body) {
 		overflow: hidden;
 	}
 
@@ -51,7 +58,6 @@
 
 	@media (max-width: 768px) {
 		:global(body) {
-			margin: 0.5rem;
 		}
 	}
 </style>

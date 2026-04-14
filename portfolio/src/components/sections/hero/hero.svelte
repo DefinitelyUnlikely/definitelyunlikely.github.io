@@ -40,6 +40,13 @@
         font-weight: bold;
         margin-bottom: 0rem;
         text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    @media (max-width: 600px) {
+        .hero-text h1 {
+            font-size: 2.2rem;
+        }
     }
 
     .hero-text .title {
