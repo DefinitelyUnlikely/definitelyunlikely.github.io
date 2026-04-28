@@ -69,6 +69,10 @@
 </div>
 
 <style>
+    h2 {
+        margin-bottom: 2rem;
+    }
+
     .exp {
         display: flex;
         flex-direction: column;
