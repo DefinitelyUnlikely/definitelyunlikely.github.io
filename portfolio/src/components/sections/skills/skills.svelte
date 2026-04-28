@@ -121,6 +121,7 @@
 
     .section-title {
         align-self: center;
+        margin-bottom: 2rem;
     }
 
     .skills > div {
@@ -129,7 +130,7 @@
 
     .skills-text {
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
 
     .languages,
