@@ -159,7 +159,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        gap: 0.5rem;
+        gap: 1rem;
         margin-bottom: 0.75rem;
     }
 </style>
